@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cat Gallery</h1>
+    </header>
+    <main>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search cat breeds...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="pagination-buttons" class="button-group">
+            <button id="prev-page" class="pagination-button">Previous Page</button>
+            <button id="next-page" class="pagination-button">Next Page</button>
+        </div>
+        <div id="filter-sort-container">
+            <button id="random-cat" class="secondary-button">Random Cat</button>
+            <label for="breed-filter">Breed:</label>
+            <select id="breed-filter" class="dropdown"></select>
+            <label for="sort-by">Sort By:</label>
+            <select id="breed-filter"></select>
+
+            <select id="sort-by" class="dropdown">
+                <option value="popularity">Popularity</option>
+                <option value="upload-date">Upload Date</option>
+            </select>
+        </div>
+        <div id="gallery-container" class="gallery"></div>
+      
+    </main>
+    <footer>
+        <p>Powered by The Cat API</p>
+    </footer>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
